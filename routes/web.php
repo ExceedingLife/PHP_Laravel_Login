@@ -30,6 +30,7 @@ Auth::routes(['verify' => true]);
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/changePassword', 'HomeController@showChangePasswordForm');
+Route::post('/changePassword', 'HomeController@changePassword')->name('changePassword');
 
 // Route::get('/passwordChange', 'HomeController@showSetPasswordView');
 Route::get('/passwordChange', function(){
